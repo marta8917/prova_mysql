@@ -18,7 +18,7 @@ namespace Imprimis
             Counter,
             Notes,
             Timestamp,
-            All, // tutti in OR
+            All, // tutti in OR --> ho immaginato una ricerca generica del tipo: cerca ovunque questa parola (in and non mi sembrava abbastanza realistica)
             None //no WHERE
         }
 
@@ -34,7 +34,7 @@ namespace Imprimis
                 Console.WriteLine("4. Counter");
                 Console.WriteLine("5. Notes");
                 Console.WriteLine("6. Timestamp");
-                Console.WriteLine("7. Filtra su tutti i campi testuali(OR)");
+                Console.WriteLine("7. Filtra su tutti i campi testuali(OR)");//qui andrebbero gestiti meglio i filtri compositi
                 Console.WriteLine("8. Non filtrare");
                 var key = Console.ReadKey();
                 switch (key.KeyChar)

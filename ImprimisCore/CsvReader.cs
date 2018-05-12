@@ -33,7 +33,7 @@ namespace ImprimisCore
             user.Email = stringUserList[0]?.Trim('"');
             user.Phone = stringUserList[1]?.Trim('"');
             user.Name = stringUserList[2]?.Trim('"');
-            user.Counter = int.Parse(stringUserList[3]);
+            user.Counter = int.Parse(stringUserList[3]);//parso perchè non è string ma int
             user.Notes = stringUserList[4]?.Trim('"');
             user.TimeStamp = DateTime.Parse(stringUserList[5]);
             return user;

@@ -58,7 +58,8 @@ namespace ImprimisCore
         }
 
 
-        //Crea la tabella e la svuota ad ogni nuova chiamata
+        //Crea la tabella e la svuota ad ogni nuova chiamata--> @ = verbatim string per considerare anche gli escape caracters e l'invio per andare a capo
+
         const string CreateNewTableScript = @"
 DROP TABLE IF EXISTS `users_new`;
 
